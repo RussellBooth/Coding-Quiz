@@ -1,4 +1,4 @@
-## Coding-Quiz
+## Coding-Quiz (current work-in-process)
 
 This project was to make an interactive quiz that tracks scores, and keeps the data for future use. There is a timer that helps to track the score, and when an incorrect choice is made subtracts 10 seconds from the quiz timer.
 
