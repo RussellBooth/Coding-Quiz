@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./Assets/style.css">
+    <title>Interactive Quiz</title>
+</head>
+
+
+<body>
+
+<header> 
+    <a id="highscore-link">View Highscore</a>
+    <div class="timer-count">Time: <span id="timer-count"></span></div> <!--timer countdown here-->
+</header>
+
+
+    <div class="app">
+        <h1>Coding Quiz Challenge</h1>
+        <div class="quiz">
+            <h2 id="quiz-start">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score and time by ten seconds.</h2> <!--quiz rules-->
+            <button id="start-btn">Start Quiz</button><!--starts the quiz-->
+            <h2 id="question"><!--question goeshere--></h2>
+            <div id="options"></div>
+        </div> 
+    </div>
+
+    <div hidden id="score-card" class="card">
+        <h2> All Done!</h2>
+        <p>Your final score is <span id="score"></span>.</p>
+        <form class="inline-form" id="submission-form">
+            <label for="initials">Enter Initials: </label>
+            <input type="text" id="initials">
+            <button id="submit-button" class="button">Submit</button>
+        </form>
+    </div>
+
+    <div hidden id="highscore-card" class="card">
+        <h2>Highscores</h2>
+        <ol id="highscore-list">
+        </ol>
+        <div class="inline-buttons">
+            <button id="back-button" class="button">Go Back</button>
+            <button id="clear-button" class="button">Clear Highscore</button>
+        </div>
+    </div>
+
+    <script src="./Assets/script.js"></script>
+</body>
+
+</html>
